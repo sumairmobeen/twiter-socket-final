@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <script src="socket.io.js"></script>
+</head>
+<body>
+
+    <div class="testbox">
+        <h1>login</h1>
+
+        <form  onsubmit="return login()">
+            <hr>
+            <div class="accounttype">
+                <a href="index.html">Signup</a>
+              </div>
+            <hr>
+            
+            <input required type="email"  id="email" placeholder="Email"  />
+             
+            <input required type="password"  id="password" placeholder="Password"  />
+            <div class="login">
+                <button  class="button">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+
+    
+</body>
+</html>

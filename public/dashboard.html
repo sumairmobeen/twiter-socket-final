@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <script src="socket.io.js"></script>
+</head>
+<body>
+    <body onload="getTweets()">
+
+
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <h3 id="welcomeUser">
+      
+            </h3>
+            <button onclick="logout()" id="lgBtn" class="btn btn-sm btn-outline-secondary ml-3" type="button">LOGOUT</button>
+          </form>
+        </nav>
+      
+      
+        <div class="container">
+          <div class="create__post">
+            <input id="userPost" placeholder="whats on your mind?" class="posts__input" maxlength="150">
+            <button class="post__button" onclick="post()">Post</button>
+          </div>
+          <div class="myCard">
+            <div>
+      
+            </div>
+            
+            <div class="posts__container">
+      
+              <ul id="posts">
+      
+              </ul>
+              <div id="myPost">
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      
+      
+        <script src="app.js"></script>
+
+    
+</body>
+</html>
